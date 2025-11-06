@@ -29,7 +29,7 @@ set -gx FZF_CTRL_T_OPTS "--preview 'bat --style=numbers --color=always --line-ra
 set -gx EDITOR hx
 set -gx LEDGER_FILE ~/Developer/finance/2025.journal
 
-{{ if eq .chezmoi.username "rwblickhan" }}
+{{ if eq .chezmoi.hostname "Russells-MacBook-Air" }}
 set -gx FULL_INSTALL true
 {{ end }}
 
@@ -70,5 +70,5 @@ if status is-interactive
     abbr -a --position anywhere r2b s3:{{ onepasswordRead "op://Private/Cloudflare Backups/endpoint" }}
 
     abbr -a exp expense
-    abbr -a bbic "brew bundle install {{ if eq .chezmoi.username "rwblickhan" }}--cleanup {{ end }}--file=~/Brewfile && brew upgrade"
+    abbr -a bbic "brew bundle install {{ if eq .chezmoi.hostname "Russells-MacBook-Air" }}--cleanup {{ end }}--file=~/Brewfile && brew upgrade"
 end
