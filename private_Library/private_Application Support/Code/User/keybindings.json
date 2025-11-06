@@ -1,0 +1,78 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  // Obsidian keybindings
+  // Cmd-o to open file
+  // Cmd-p to open commands
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "shift+cmd+p",
+    "command": "-workbench.action.showCommands"
+  },
+  // iTerm2-like keybindings
+  // Cmd-d to split vertically
+  // Cmd-shift-d to split horizontally
+  {
+    "key": "cmd+d",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "workbench.action.splitEditorOrthogonal"
+  },
+  // vim-like keybindings for opening panels
+  // Cmd-shift-h for left panel
+  // Cmd-shift-l for right panel
+  // Cmd-shift-j for bottom panel
+  {
+    "key": "shift+cmd+h",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-selectAllSearchEditorMatches",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-addCursorsAtSearchResults",
+    "when": "fileMatchOrMatchFocus && searchViewletVisible"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  // Always allow Cmd-K/Cmd-R to revert changes
+  {
+    "key": "cmd+k cmd+r",
+    "command": "git.revertSelectedRanges"
+  }
+]
