@@ -29,6 +29,10 @@ set -gx FZF_CTRL_T_OPTS "--preview 'bat --style=numbers --color=always --line-ra
 set -gx EDITOR hx
 set -gx LEDGER_FILE ~/Developer/finance/2025.journal
 
+{{ if eq .chezmoi.username "rwblickhan" }}
+set -gx FULL_INSTALL true
+{{ end }}
+
 if command -sq bat
     alias cat bat
 end
