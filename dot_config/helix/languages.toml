@@ -1,0 +1,3 @@
+[[language]]
+name = "fish"
+file-types = ["fish", { glob = "*.fish.tmpl" }]
