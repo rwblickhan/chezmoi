@@ -4,3 +4,13 @@ theme = "ayu_dark"
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[keys.normal]
+W = 'move_next_sub_word_start'
+B = 'move_prev_sub_word_start'
+E = 'move_next_sub_word_end'
+
+[keys.select]
+W = 'extend_next_sub_word_start'
+B = 'extend_prev_sub_word_start'
+E = 'extend_next_sub_word_end'
