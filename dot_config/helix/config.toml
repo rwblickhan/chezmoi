@@ -9,8 +9,12 @@ select = "underline"
 W = 'move_next_sub_word_start'
 B = 'move_prev_sub_word_start'
 E = 'move_next_sub_word_end'
+H = 'extend_to_line_start'
+L = 'extend_to_line_end'
 
 [keys.select]
 W = 'extend_next_sub_word_start'
 B = 'extend_prev_sub_word_start'
 E = 'extend_next_sub_word_end'
+H = 'extend_to_line_start'
+L = 'extend_to_line_end'
