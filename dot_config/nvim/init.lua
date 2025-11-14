@@ -92,6 +92,14 @@ if vim.g.vscode then
   vim.keymap.set('n', '"', function()
     require('vscode').action('bookmarks.listFromAllFiles')
   end)
+
+  vim.keymap.set('n', ']H', function()
+    require('vscode').action('workbench.action.editor.nextChange')
+  end)
+
+  vim.keymap.set('n', '[H', function()
+    require('vscode').action('workbench.action.editor.previousChange')
+  end)
 end
 
 
