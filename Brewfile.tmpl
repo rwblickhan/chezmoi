@@ -86,7 +86,7 @@ vscode "asvetliakov.vscode-neovim"
 # Bookmarks
 vscode "alefragnani.Bookmarks"
 
-{{ if env "FULL_INSTALL" }}
+{{ if eq .chezmoi.username "rwblickhan" }}
 # Install rust binaries
 brew "cargo-binstall"
 # Terminal cheatsheets
