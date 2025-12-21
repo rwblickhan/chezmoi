@@ -3,7 +3,7 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 Plug('bkad/CamelCaseMotion')
-Plug('echasnovski/mini.nvim')
+Plug('nvim-mini/mini.nvim')
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 Plug('nvim-treesitter/nvim-treesitter-textobjects')
 Plug('tpope/vim-repeat')
