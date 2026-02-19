@@ -8,6 +8,9 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.soft-wrap]
+enable = true
+
 [keys.normal]
 # subwords
 W = 'move_next_sub_word_start'
