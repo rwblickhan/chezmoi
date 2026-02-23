@@ -12,6 +12,11 @@ select = "underline"
 enable = true
 
 [keys.normal]
+# split navigation (vim-tmux-navigator style)
+C-h = 'jump_view_left'
+C-j = 'jump_view_down'
+C-k = 'jump_view_up'
+C-l = 'jump_view_right'
 # subwords
 W = 'move_next_sub_word_start'
 B = 'move_prev_sub_word_start'
