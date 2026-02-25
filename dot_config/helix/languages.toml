@@ -2,3 +2,13 @@
 name = "fish"
 file-types = ["fish", { glob = "*.fish.tmpl" }]
 auto-format = false
+
+[[language]]
+name = "ledger"
+scope = "source.ledger"
+file-types = ["journal", "ledger", "hledger"]
+comment-token = ";"
+language-servers = ["ledger-language-server"]
+
+[language-server.ledger-language-server]
+command = "ledger-language-server"
